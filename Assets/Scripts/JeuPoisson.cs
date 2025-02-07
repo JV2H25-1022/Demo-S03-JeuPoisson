@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JeuPoisson : MonoBehaviour
 {
@@ -38,6 +39,10 @@ public class JeuPoisson : MonoBehaviour
         {
             Debug.Log("Non!");
         }
+    }
+
+    public void Redemarrer(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
